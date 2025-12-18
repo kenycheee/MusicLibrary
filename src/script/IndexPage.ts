@@ -1,4 +1,4 @@
-import { defineComponent, ref, computed, nextTick, onMounted } from 'vue'
+import { defineComponent, ref, computed, nextTick, onMounted, onUnmounted } from 'vue'
 
 type Song = {
   title: string
@@ -138,6 +138,28 @@ export default defineComponent({
       }
     })
 
+    // ===== BACK TO TOP =====
+    const showBackToTop = ref(false)
+
+    const handleScroll = () => {
+      showBackToTop.value = window.scrollY > 400
+    }
+
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }
+
+    onMounted(() => {
+      window.addEventListener('scroll', handleScroll)
+    })
+
+    onUnmounted(() => {
+      window.removeEventListener('scroll', handleScroll)
+    })
+
     return {
       audio,
       songs,
@@ -149,7 +171,9 @@ export default defineComponent({
       seek,
       nextSong,
       prevSong,
-      selectSong
+      selectSong,
+      showBackToTop,
+      scrollToTop
     }
   }
 })

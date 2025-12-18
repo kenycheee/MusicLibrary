@@ -156,44 +156,24 @@
       </div>
     </section>
 
+    <!-- BACK TO TOP -->
+    <transition name="fade-slide">
+      <button
+        v-if="showBackToTop"
+        class="back-to-top"
+        @click="scrollToTop"
+      >
+        ↑
+      </button>
+    </transition>
   </q-page>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="footer-container">
-
-      <!-- LEFT -->
-      <div class="footer-brand">
-        <h3>My Music World</h3>
-        <p>
-          A personal archive of classical and instrumental music,
-          collected and curated through my own listening journey.
-        </p>
-      </div>
-
-      <!-- CENTER -->
-      <div class="footer-links">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#/">Home</a></li>
-          <li><a href="#/playlist">Playlist</a></li>
-          <li><a href="#/gallery">Gallery</a></li>
-          <li><a href="#/about">About</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      © 2025 My Music World — Personal Music Archive
-    </div>
-  </footer>
 
 </template>
 
 <script lang="ts">
-import IndexPage from '../script/IndexPage'
+  import IndexPage from '../script/IndexPage'
 
-export default IndexPage
+  export default IndexPage
 </script>
 
 <style src="../css/IndexPage.scss" scoped></style>
