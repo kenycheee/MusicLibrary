@@ -63,7 +63,7 @@
             <strong>31</strong>
           </div>
 
-          <img src="/images/concert-1.jpg" alt="Concert" />
+          <img src="/images/saxophone-bg.jpg" alt="Concert" />
 
           <div class="concert-content">
             <h3>2026 Shanghai New Year Concert</h3>
@@ -86,7 +86,7 @@
             <strong>27</strong>
           </div>
 
-          <img src="/images/concert-2.jpg" alt="Concert" />
+          <img src="/images/Badinerie.png" alt="Concert" />
 
           <div class="concert-content">
             <h3>Guiyang Concert</h3>
