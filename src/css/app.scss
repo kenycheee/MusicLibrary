@@ -1,1 +1,21 @@
 // app global css in SCSS form
+
+/* ================= HERO ================= */
+.hero-section {
+  position: relative;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Background */
+.bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}

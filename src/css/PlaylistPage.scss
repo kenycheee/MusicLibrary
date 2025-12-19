@@ -1,0 +1,22 @@
+.album-card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+  transform: translateY(-8px);
+}
+
+.album-cover {
+  border-radius: 8px;
+}
+
+.album-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.album-artist {
+  font-size: 12px;
+  color: #777;
+}

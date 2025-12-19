@@ -3,10 +3,9 @@
 
     <!-- ================= HERO ================= -->
     <section class="hero-section">
-
       <!-- Background Video -->
       <video
-        class="bg-video"
+        class="bg"
         autoplay
         muted
         loop
